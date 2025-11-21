@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GeoClicker — Click the Circle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>GeoClicker</h1>
+      <div class="stats">
+        <div id="score">0</div>
+        <div class="sub">Shapes</div>
+      </div>
+      <div class="meta">
+        <div id="perClick">+1 / click</div>
+        <div id="perSec">0 / sec</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="play-area" aria-label="Play area">
+        <button id="bigCircle" class="big-circle" aria-label="Big circle — click me"></button>
+        <div class="controls">
+          <button id="saveBtn" class="small">Save</button>
+          <button id="resetBtn" class="small danger">Reset</button>
+        </div>
+      </section>
+
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="panel">
+          <h2>Upgrades</h2>
+          <div id="upgrades" class="list"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Scenarios</h2>
+          <div id="scenarioArea" class="scenario-area">
+            <div id="currentScenario" class="scenario">No active scenario</div>
+            <div class="scenario-controls">
+              <button id="nextScenario" class="small">Next scenario</button>
+            </div>
+            <div id="scenarioLog" class="log"></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Boosts</h2>
+          <div id="boosts" class="list"></div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Click the circle — that's it. Autosaves every 10s. Saved in your browser.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
